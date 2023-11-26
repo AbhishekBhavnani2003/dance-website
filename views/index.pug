@@ -1,0 +1,58 @@
+//- index.pug
+doctype html
+html
+  head
+    title Vivanta Dance Academy
+    style
+      include ../static/style.css
+  body
+    nav#navbar.top 
+       ul
+            div#logo 
+              img(src="/static/images/dance boy nobg.png")
+              | VDA 
+            li #[a(href="/") Home]
+            li #[a(href="/") About]
+            li #[a(href="/") Services]
+            li #[a(href="/") Contact us ]
+            li #[a(href="/") Academy info ]
+    section#introsection 
+        div Welcome To Vivanta Dance Academy
+        div.small Let's Beat On The Floor
+    section#missionsection 
+        h2 Our Mission
+        div.card 
+         h3 Dance Perfection
+          div.cardbox 
+            div.cardimg 
+                img(src="/static/duo pic no bg.png ")
+
+            div.cardcontent 
+               p This is best dance academy of the universe 
+        div.card 
+         h3 Dance the way you like 
+          div.cardbox 
+            div.cardimg 
+                img(src="/static/colorful dance no bg.png " )
+
+            div.cardcontent 
+               p This is best dance academy of the universe 
+        div.card 
+         h3 Expert Teaching
+          div.cardbox 
+            div.cardimg 
+                img(src="/static/colorful dance no bg.png ")
+
+            div.cardcontent 
+               p This is best dance academy of the universe 
+    section#sponsersection 
+        h2 Our Sponser's
+        div#sponsers 
+          img(src="/static/images/sponser.png", alt="sponser image " , class="spimage")
+          img(src="/static/images/sponser 2.png", alt="sponser image " , class="spimage")
+          img(src="/static/images/sponser 3.png", alt="sponser image " , class="spimage")
+          img(src="/static/images/sponser 4.png", alt="sponser image " , class="spimage")
+    footer#footer 
+        | Copyright © 2023 VivantaDanceAcademy.com | All Rights Reserved 
+    script
+      include ../static/index.js
